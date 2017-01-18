@@ -61,6 +61,8 @@
 (require 'my-core)
 (require 'my-evil)
 (require 'my-ui)
+(require 'my-leader-keys)
+(require 'my-buffers)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (custom-set-variables

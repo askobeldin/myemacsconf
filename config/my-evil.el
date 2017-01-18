@@ -13,10 +13,9 @@
   :ensure evil-leader
   :demand evil-leader
   :config
-  (progn
-	(evil-leader/set-leader ",")
-    ; (evil-leader/set-leader "\")
-    (global-evil-leader-mode t)))
+	  (progn
+		(evil-leader/set-leader ",")
+		(global-evil-leader-mode t)))
 
 
 ;; Here's what we've all been waiting for.
@@ -32,11 +31,6 @@
     (setq evil-search-module        'isearch)
     (setq evil-magic                'very-magic)
 
-	;; cursor config
-    ; (setq evil-emacs-state-cursor   '("#dfaf8f" box))
-    ; (setq evil-normal-state-cursor  '("#f8f893" box))
-    ; (setq evil-insert-state-cursor  '("#f8f893" bar))
-    ; (setq evil-replace-state-cursor '("#cc9393" box))
 
     (setq evil-want-fine-undo t)
     (setq evil-want-change-word-to-end t)
