@@ -1,0 +1,7 @@
+# emacs
+
+elpa/
+auto-save-list/
+
+*.swp
+*.*~
