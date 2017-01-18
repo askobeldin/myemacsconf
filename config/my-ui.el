@@ -111,6 +111,7 @@
 (setq evil-normal-state-cursor  '("#00008b" box))
 (setq evil-insert-state-cursor  '("#00008b" (hbar . 3)))
 (setq evil-replace-state-cursor '("#00008b" box))
+(load-theme 'faff t)
 
 ;; theme: gnome2
 ; (setq evil-emacs-state-cursor   '("#ffff00" hollow))
