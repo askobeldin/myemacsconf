@@ -65,6 +65,7 @@
 (require 'my-ui)
 (require 'my-leader-keys)
 (require 'my-buffers)
+(require 'my-help)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (custom-set-variables

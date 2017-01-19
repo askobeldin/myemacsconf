@@ -106,18 +106,25 @@
 ; (setq evil-insert-state-cursor  '("#ffff00" (hbar . 3)))
 ; (setq evil-replace-state-cursor '("#ffff00" box))
 
-;; theme: xemacs
-(setq evil-emacs-state-cursor   '("#00008b" hollow))
-(setq evil-normal-state-cursor  '("#00008b" box))
-(setq evil-insert-state-cursor  '("#00008b" (hbar . 3)))
-(setq evil-replace-state-cursor '("#00008b" box))
-(load-theme 'faff t)
-
 ;; theme: gnome2
 ; (setq evil-emacs-state-cursor   '("#ffff00" hollow))
 ; (setq evil-normal-state-cursor  '("#ffff00" box))
 ; (setq evil-insert-state-cursor  '("#ffff00" (hbar . 3)))
 ; (setq evil-replace-state-cursor '("#ffff00" box))
+;
+
+
+
+;; cursor
+(setq evil-emacs-state-cursor   '("#00008b" hollow))
+(setq evil-normal-state-cursor  '("#00008b" box))
+(setq evil-insert-state-cursor  '("#00008b" (hbar . 3)))
+(setq evil-replace-state-cursor '("#008b8b" box))
+
+
+;; theme
+(load-theme 'faff t)
+
 
 ;; ===========================================================
 ;; Evil mode
