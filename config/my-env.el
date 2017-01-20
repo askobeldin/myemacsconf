@@ -28,7 +28,7 @@
 
 ;; Coding-system
 (set-language-environment 'UTF-8)
-(if (or (system-is-linux) (system-is-mac))
+(if (or (my-system-is-linux) (my-system-is-mac))
     (progn
         (setq default-buffer-file-coding-system 'utf-8)
         (setq-default coding-system-for-read    'utf-8)

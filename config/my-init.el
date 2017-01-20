@@ -3,17 +3,17 @@
 ;; init functions, data, etc.
 ;;
 
-(defun system-is-linux ()
+(defun my-system-is-linux ()
     "Linux system checking."
     (interactive)
     (string-equal system-type "gnu/linux"))
 
-(defun system-is-mac ()
+(defun my-system-is-mac ()
     "Mac OS X system checking."
     (interactive)
     (string-equal system-type "darwin"))
 
-(defun system-is-windows ()
+(defun my-system-is-windows ()
     "MS Windows system checking."
     (interactive)
     (string-equal system-type "windows-nt"))

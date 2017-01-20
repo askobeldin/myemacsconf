@@ -62,5 +62,7 @@
 (require 'my-leader-keys)
 (require 'my-buffers)
 (require 'my-help)
+(require 'my-ag)
+(require 'my-dired)
 
 (provide 'init)
