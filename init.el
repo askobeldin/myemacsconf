@@ -22,6 +22,7 @@
                   evil-matchit
                   evil-surround
                   evil-visualstar
+                  neotree
                   faff-theme))
 
 (require 'package)
@@ -62,7 +63,8 @@
 (require 'my-leader-keys)
 (require 'my-buffers)
 (require 'my-help)
-(require 'my-ag)
+;; (require 'my-ag)
 (require 'my-dired)
+(require 'my-neotree)
 
 (provide 'init)

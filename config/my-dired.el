@@ -1,4 +1,3 @@
-
 ;; ugly workaround because OSX ls doesn't support the -X switch
 ;;
 ;; ref:
@@ -43,16 +42,12 @@
   :init
   (progn
     (defun my-load-dired-x ()
-      "Load dired-x.
-
-For use on dired-load-hook"
+      "Load dired-x. For use on dired-load-hook"
         (load "dired-x"))
     (add-hook 'dired-load-hook 'my-load-dired-x)))
 
 (defun my-configure-dired ()
-  "Setup dired and dired-x.
-
-For use with dired-mode-hook."
+  "Setup dired and dired-x. For use with dired-mode-hook."
   (dired-omit-mode 1))
 
 (add-hook 'dired-mode-hook 'my-configure-dired)
@@ -85,8 +80,8 @@ For use with dired-mode-hook."
       (dired-find-file))))
 
 (defun my-dired-at-title ()
-  "Returns the current dir if point is at the title of a directory in dired.
-Otherwise, returns nil."
+  "Returns the current dir if point is at the title of a directory in
+dired. Otherwise, returns nil."
   (interactive)
   (let* ((cur-dir (dired-current-directory))
 	 (hidden-p (dired-subdir-hidden-p cur-dir))
