@@ -58,13 +58,25 @@
 (require 'my-init)
 (require 'my-env)
 (require 'my-core)
-(require 'my-evil)
+(require 'my-functions)
 (require 'my-ui)
-(require 'my-leader-keys)
+(require 'my-interaction)
 (require 'my-buffers)
-(require 'my-help)
-;; (require 'my-ag)
+
+(if (not (my-system-is-windows))
+  (progn
+	(require 'my-ag)))
+
 (require 'my-dired)
 (require 'my-neotree)
+(require 'my-ido)
+(require 'my-languages)
+(require 'my-evil)
+(require 'my-help)
+(require 'my-eshell)
+(require 'my-package-list)
+
+
+(require 'my-leader-keys)
 
 (provide 'init)

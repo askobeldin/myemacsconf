@@ -8,16 +8,24 @@
         "qw"         'evil-window-delete
         "Q"          'kill-buffer-and-window
         ">"          'find-file-at-point
-        "b"          'ibuffer
         "\\"         'split-window-horizontally
         "-"          'split-window-vertically
         "w"          'save-buffer
         ","          'other-window
-
+        "#"          'linum-mode
+        "x"          'smex
         ;; evil-nerd-commenter config
         "cc"         'evilnc-comment-or-uncomment-lines
         ;; dired
         "d"          'dired
+        ;; buffers
+        "TAB"        'my-hop-around-buffers
+        "B"          'ibuffer
+        "b"          'switch-to-buffer
+        "jb"         'ace-jump-buffer
 )
+
+; (evil-leader/set-key-for-mode 'git-commit-mode "qq" 'git-commit-abort)
+; (evil-leader/set-key-for-mode 'emacs-lisp-mode "." 'elisp-slime-nav-find-elisp-thing-at-point)
 
 (provide 'my-leader-keys)

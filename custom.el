@@ -11,7 +11,6 @@
  '(fci-rule-color "#f1c40f")
  '(hl-paren-background-colors (quote ("#2492db" "#95a5a6" nil)))
  '(hl-paren-colors (quote ("#ecf0f1" "#ecf0f1" "#c0392b")))
- '(nil nil t)
  '(package-selected-packages
    (quote
     (key-chord use-package evil-visualstar evil-surround evil-nerd-commenter evil-matchit evil-leader)))
