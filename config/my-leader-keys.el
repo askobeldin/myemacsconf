@@ -20,8 +20,8 @@
         "d"          'dired
         ;; buffers
         "TAB"        'my-hop-around-buffers
-        "B"          'ibuffer
-        "b"          'switch-to-buffer
+        "b"          'ibuffer
+        "B"          'switch-to-buffer
         "jb"         'ace-jump-buffer
 )
 

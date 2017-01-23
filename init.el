@@ -23,7 +23,8 @@
                   evil-surround
                   evil-visualstar
                   neotree
-                  faff-theme))
+                  faff-theme
+				  ace-jump-buffer))
 
 (require 'package)
 (package-initialize)
@@ -62,11 +63,7 @@
 (require 'my-ui)
 (require 'my-interaction)
 (require 'my-buffers)
-
-(if (not (my-system-is-windows))
-  (progn
-	(require 'my-ag)))
-
+(require 'my-ag)
 (require 'my-dired)
 (require 'my-neotree)
 (require 'my-ido)
@@ -75,6 +72,7 @@
 (require 'my-help)
 (require 'my-eshell)
 (require 'my-package-list)
+(require 'my-bookmarks)
 
 
 (require 'my-leader-keys)
