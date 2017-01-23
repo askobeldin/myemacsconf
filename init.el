@@ -22,6 +22,7 @@
                   evil-matchit
                   evil-surround
                   evil-visualstar
+                  evil-paredit
                   neotree
                   faff-theme
 				  ace-jump-buffer))
@@ -73,6 +74,8 @@
 (require 'my-eshell)
 (require 'my-package-list)
 (require 'my-bookmarks)
+(require 'my-paredit)
+(require 'my-ielm)
 
 
 (require 'my-leader-keys)
