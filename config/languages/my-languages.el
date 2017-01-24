@@ -1,6 +1,6 @@
 ;; (require 'my-c)
 ;; (require 'my-clojure)
-;; (require 'my-elisp)
+(require 'my-elisp)
 ;; (require 'my-go)
 ;; (require 'my-latex)
 (require 'my-python)
