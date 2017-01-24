@@ -32,11 +32,11 @@
 ; using slime-company package
 ;
 (slime-setup '(slime-repl 
-			   slime-fuzzy
-			   slime-fancy 
-			   slime-asdf 
-			   slime-indentation
-			   slime-company))
+               slime-fuzzy
+               slime-fancy 
+               slime-asdf 
+               slime-indentation
+               slime-company))
 
 
 
