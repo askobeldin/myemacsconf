@@ -5,33 +5,55 @@
 (require 'slime)
 (require 'slime-autoloads)
 
-; ac-slime package
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; using ac-slime package
 ;
-(require 'ac-slime)
+;
+; ac-slime package
+; (require 'ac-slime)
 
-(setq slime-contribs '(slime-fancy)) ; almost everything
 
-(add-hook 'slime-mode-hook 'set-up-slime-ac)
-(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+; (add-hook 'slime-mode-hook 'set-up-slime-ac)
+; (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
 
-(eval-after-load "auto-complete"
-                 '(add-to-list 'ac-modes 'slime-repl-mode))
+; (eval-after-load "auto-complete"
+                 ; '(add-to-list 'ac-modes 'slime-repl-mode))
 
-(setq slime-net-coding-system 'utf-8-unix)
+
+; (slime-setup '(slime-repl 
+               ; slime-fuzzy
+               ; slime-fancy 
+               ; slime-asdf 
+               ; slime-indentation))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; using slime-company package
+;
 (slime-setup '(slime-repl 
-               slime-fuzzy
-               slime-fancy 
-               slime-asdf 
-               slime-indentation))
+			   slime-fuzzy
+			   slime-fancy 
+			   slime-asdf 
+			   slime-indentation
+			   slime-company))
 
-(add-hook 'slime-mode-hook 
-          (lambda ()
-            (unless (slime-connected-p)
-              (save-excursion (slime)))))
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ???
+; (add-hook 'slime-mode-hook 
+          ; (lambda ()
+            ; (unless (slime-connected-p)
+              ; (save-excursion (slime)))))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 ;; Это включает алгоритмы выравнивания лиспового кода из SLIME,
 ;; в противоположность стандартным из Emacs
 (setq lisp-indent-function 'common-lisp-indent-function)
+
 
 ;; may be it is not so elegant?
 ;;
@@ -47,7 +69,7 @@
           (setq common-lisp-hyperspec-root "file:///usr/share/doc/hyperspec/"))
     (message "%s" "SBCL not found...")))
 
-;; testing
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; testing
 (if (my-system-is-windows)
     (progn
       (message "%s" "my-slime: system is windows.")))
@@ -57,10 +79,12 @@
       (message "%s" "my-slime: system is linux.")))
 ;; --------------------------------------------
 
-
+;; XXX
+; (setq ac-auto-show-menu 0.1)
 
 (add-to-list 'auto-mode-alist '("\\.cl\\'" . lisp-mode))
 
+(setq slime-net-coding-system 'utf-8-unix)
 
 
 ;; Немного настроим выравнивание отступов под себя

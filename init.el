@@ -27,9 +27,11 @@
                   faff-theme
 				  ace-jump-buffer
 				  slime
-				  auto-complete
 				  elisp-slime-nav
-				  ac-slime))
+
+				  company
+				  slime-company
+				  ))
 
 (require 'package)
 (package-initialize)
@@ -69,6 +71,7 @@
 (require 'my-interaction)
 (require 'my-buffers)
 (require 'my-ag)
+(require 'my-autocomplete)
 (require 'my-dired)
 (require 'my-neotree)
 (require 'my-ido)
