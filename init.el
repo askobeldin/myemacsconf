@@ -25,7 +25,11 @@
                   evil-paredit
                   neotree
                   faff-theme
-				  ace-jump-buffer))
+				  ace-jump-buffer
+				  slime
+				  auto-complete
+				  elisp-slime-nav
+				  ac-slime))
 
 (require 'package)
 (package-initialize)
@@ -76,6 +80,7 @@
 (require 'my-bookmarks)
 (require 'my-paredit)
 (require 'my-ielm)
+(require 'my-slime)
 
 
 (require 'my-leader-keys)
