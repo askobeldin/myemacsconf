@@ -34,7 +34,8 @@
 (defun my-setup-elisp-mode ()
   "Commands to be run at the start of Emacs Lisp mode."
   (eldoc-mode)
-  (my-coding-mode-eyecandy))
+  ; (my-coding-mode-eyecandy)
+  )
 
 (add-hook 'emacs-lisp-mode-hook 'my-setup-elisp-mode)
 
