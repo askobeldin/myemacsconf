@@ -45,10 +45,10 @@
                   evil-paredit
                   neotree
                   faff-theme
-				  ace-jump-buffer
-				  company
-				  sly
-				  ))
+                  ace-jump-buffer
+                  company
+                  sly
+                  ))
 
 (require 'package)
 (package-initialize)
