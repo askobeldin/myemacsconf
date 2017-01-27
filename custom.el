@@ -13,7 +13,7 @@
  '(hl-paren-colors (quote ("#ecf0f1" "#ecf0f1" "#c0392b")))
  '(package-selected-packages
    (quote
-    ()))
+    (key-chord markdown-mode ido-vertical-mode flx-ido ido-ubiquitous smex ag expand-region guide-key ace-jump-mode sly company ace-jump-buffer faff-theme neotree evil-paredit evil-visualstar evil-surround evil-matchit evil-nerd-commenter evil-leader use-package)))
  '(sml/active-background-color "#34495e")
  '(sml/active-foreground-color "#ecf0f1")
  '(sml/inactive-background-color "#dfe4ea")

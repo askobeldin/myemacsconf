@@ -46,7 +46,7 @@
   ;; not so much on regular ones - that's more likely to be a mistake.
   (if (my-is-this-line-empty)
       (insert ";; ")
-    (insert ";")))
+    (insert "; ")))
 
 (after 'evil
   (evil-define-key 'insert emacs-lisp-mode-map ";" 'my-electric-lisp-comment)
