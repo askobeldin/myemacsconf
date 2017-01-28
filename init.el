@@ -10,30 +10,10 @@
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
                          ("org" . "http://orgmode.org/elpa/")
                          ("gnu" . "http://elpa.gnu.org/packages/")))
-						 
+                         
 (require 'cl)
 
-;; =================================================================
 ;; Packages list
-; (defvar required-packages
-                ; '(evil
-                  ; evil-leader
-                  ; evil-nerd-commenter
-                  ; evil-matchit
-                  ; evil-surround
-                  ; evil-visualstar
-                  ; evil-paredit
-                  ; neotree
-                  ; faff-theme
-				  ; ace-jump-buffer
-				  ; slime
-				  ; elisp-slime-nav
-
-				  ; company
-				  ; slime-company
-
-				  ; sly
-				  ; ))
 
 (defvar required-packages
                 '(evil

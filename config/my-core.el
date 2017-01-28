@@ -11,10 +11,16 @@
 ;; Emacs время от времени автоматически создает копию, и удаляет её
 ;; как только вы сохрание файл с которым работаете.
 (setq-default auto-save-defaults t)
+(setq auto-save-interval 500
+      auto-save-timeout 0)
 
-;; Это отключает табы. Как бы вы не относились к табам
-;; в контексте кода других языков программирования,
-;; в лиспе с ними работать совершенно невозможно.
+;; Директория для автосохранения файлов
+(setq backup-directory-alist
+          `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+          `((".*" ,temporary-file-directory t)))
+
+;; Это отключает табы
 (setq-default indent-tabs-mode nil)
 
 ;; lockfiles are evil.
@@ -25,13 +31,6 @@
 
 ;'Woman' > 'man'.
 (defalias 'man 'woman)
-
-;; Директория для автосохранения файлов
-(defvar my-auto-save-folder "~/.emacs.d/.saves/"
-  "Directory used for Emacs backups.")
-(setq backup-directory-alist `(("." . "~/.emacs.d/.saves")))
-(setq auto-save-file-name-transforms
-      `((".*" ,my-auto-save-folder t)))
 
 (eval-when-compile (require 'cl))
 (require 'cl-lib)

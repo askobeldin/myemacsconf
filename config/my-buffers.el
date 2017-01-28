@@ -17,20 +17,23 @@
 ;; my filter groups
 (setq ibuffer-saved-filter-groups
           (quote (("default"
-                   ("dired" (mode . dired-mode))
-                   ("python" (mode . python-mode))
+                   ("Dired" (mode . dired-mode))
+                   ("Python" (mode . python-mode))
                    ; ("wiki" (or
                             ; (filename . (concat (getenv "HOME") "/wiki"))
                             ; (filename . (concat (getenv "HOME") ".gitit"))))
-                   ("notes" (or
+                   ("Planner" (or
                              (name . "^\\*Calendar\\*$")
                              (name . "^diary$")
                              (mode . org-mode)))
+                   ("emacs" (or
+                              (name . "^\\*scratch\\*$")
+                              (name . "^\\*Messages\\*$")))
                    ("*buffer*" (name . "\\*.*\\*"))
                    ("Web Dev" (or (mode . html-mode)
                                   (mode . css-mode)))
 				   ("Help" (or
-                                                        (name . "\*Help\*")
+                             (name . "\*Help\*")
 							 (name . "\*Apropos\*")
 							 (name . "\*info\*")))
                    ))))
