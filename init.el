@@ -48,6 +48,8 @@
                   ace-jump-buffer
                   company
                   sly
+                  rainbow-delimiters
+                  rainbow-blocks
                   ))
 
 (require 'package)
