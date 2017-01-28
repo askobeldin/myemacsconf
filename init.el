@@ -1,7 +1,8 @@
 ;;;; my config
+;;;; 
+;;;; branch - minimal1
+;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;
-;;;;
 
 (add-to-list 'load-path (concat user-emacs-directory "config"))
 (add-to-list 'load-path (concat user-emacs-directory "elisp"))
@@ -13,28 +14,7 @@
 						 
 (require 'cl)
 
-;; =================================================================
 ;; Packages list
-; (defvar required-packages
-                ; '(evil
-                  ; evil-leader
-                  ; evil-nerd-commenter
-                  ; evil-matchit
-                  ; evil-surround
-                  ; evil-visualstar
-                  ; evil-paredit
-                  ; neotree
-                  ; faff-theme
-				  ; ace-jump-buffer
-				  ; slime
-				  ; elisp-slime-nav
-
-				  ; company
-				  ; slime-company
-
-				  ; sly
-				  ; ))
-
 (defvar required-packages
                 '(evil
                   evil-leader
@@ -54,6 +34,7 @@
 
 (require 'package)
 (package-initialize)
+
 (setq package-enable-at-startup nil)
 (unless (package-installed-p 'use-package)
     (package-refresh-contents)
@@ -78,10 +59,7 @@
         (unless (package-installed-p package)
             (package-install package))))
 
-;; =================================================================
 ;; requires
-;;
-
 (require 'my-init)
 (require 'my-env)
 (require 'my-core)
