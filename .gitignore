@@ -9,3 +9,4 @@ eshell/
 *.swp
 *.*~
 bookmarks
+projectile-bookmarks*

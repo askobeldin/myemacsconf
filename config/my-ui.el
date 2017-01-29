@@ -18,6 +18,11 @@
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
+
+; input method
+; toggle - C-\
+(setq default-input-method 'russian-computer)
+
 ; (global-hl-line-mode t)                     ; global Highlight current textline
 
 ;; Window size. Set font

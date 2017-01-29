@@ -30,6 +30,9 @@
                   sly
                   rainbow-delimiters
                   rainbow-blocks
+                  helm
+                  helm-swoop
+                  projectile
                   ))
 
 (require 'package)
@@ -84,6 +87,8 @@
 (require 'my-ielm)
 ; (require 'my-slime)
 (require 'my-sly)
+(require 'my-helm)
+(require 'my-projects)
 
 
 (require 'my-leader-keys)
