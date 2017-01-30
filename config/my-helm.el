@@ -7,8 +7,11 @@
   :config
   (progn
     (setq helm-buffers-fuzzy-matching t)
-    (setq helm-split-window-default-side (quote other))
-    (setq helm-split-window-in-side-p nil)
+	(setq helm-split-window-default-side (quote other))
+	(setq helm-split-window-in-side-p nil)
+	;; If this value is t, split window inside the current window
+	(setq helm-swoop-split-with-multiple-windows nil)
+
     (defun my-helm-in-ido (buffer)
       "Display a helm buffer in ido. Send the purists screaming."
       (interactive)

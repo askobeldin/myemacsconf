@@ -5,6 +5,8 @@ auto-save-list/
 url/
 eshell/
 .cache/
+server/
+
 
 *.swp
 *.*~

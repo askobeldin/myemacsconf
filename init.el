@@ -27,16 +27,22 @@
                   faff-theme
                   ace-jump-buffer
                   company
+                  company-jedi
                   sly
                   rainbow-delimiters
                   rainbow-blocks
                   helm
                   helm-swoop
                   projectile
+                  flymake
+				  magit
+				  elpy
                   ))
+
 
 (require 'package)
 (package-initialize)
+
 (setq package-enable-at-startup nil)
 (unless (package-installed-p 'use-package)
     (package-refresh-contents)
@@ -88,6 +94,7 @@
 ; (require 'my-slime)
 (require 'my-sly)
 (require 'my-helm)
+(require 'my-magit)
 (require 'my-projects)
 
 

@@ -17,10 +17,13 @@
 
         "#"          'linum-mode
         "x"          'smex
+
         ;; evil-nerd-commenter config
         "cc"         'evilnc-comment-or-uncomment-lines
+
         ;; Dired
         "d"          'dired
+
         ;; buffers
         "TAB"        'my-hop-around-buffers
         "b"          'ibuffer
@@ -29,11 +32,26 @@
 
         ;; find file or url
         "jf"         'ffap
+
         ;; helm
         "hs"         'helm-swoop
         "hi"         'helm-imenu
+
         ;; silversearcer (ag)
         "sr"         'ag-regexp
+
+        ;; magit
+        "gs"         'magit-status
+        "gl"         'magit-log
+        "gd"         'magit-diff
+
+        ;; projectile
+        "P"          'projectile-switch-project
+
+        ;; ido
+        "l"          'ido-goto-symbol
+        "f"          'ido-find-file
+
 )
 
 ; (evil-leader/set-key-for-mode 'git-commit-mode "qq" 'git-commit-abort)
