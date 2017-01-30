@@ -27,16 +27,14 @@
                   faff-theme
                   ace-jump-buffer
                   company
-                  company-jedi
                   sly
+                  sly-company
                   rainbow-delimiters
                   rainbow-blocks
                   helm
                   helm-swoop
                   projectile
-                  flymake
 				  magit
-				  elpy
                   ))
 
 
