@@ -1,14 +1,14 @@
 ;; my-ui.el
 ;; user interface
 ;;
-;; 
 
 ;; Disable GUI components
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+
 (tooltip-mode      -1)
 ; (menu-bar-mode     -1)
-; (blink-cursor-mode -1)
+
 (blink-cursor-mode t)
 (setq use-dialog-box     nil)
 (setq redisplay-dont-pause t)
@@ -18,12 +18,12 @@
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
-
 ; input method
 ; toggle - C-\
 (setq default-input-method 'russian-computer)
 
-; (global-hl-line-mode t)                     ; global Highlight current textline
+; global Highlight current textline
+; (global-hl-line-mode t)
 
 ;; Window size. Set font
 (add-to-list 'default-frame-alist '(width . 100))
@@ -34,7 +34,6 @@
 ;; maximize main window when emacs starts
 ; (add-to-list 'default-frame-alist
              ; '(fullscreen . maximized))
-
 
 ; Reconfigure highlight line's color
 ; (set-face-background 'hl-line "#dcdcdc")
@@ -94,44 +93,17 @@
 (setq search-highlight t
       query-replace-highlight t)
 
-;; =================================================================
 ;; Cursor for evil mode
-;; =================================================================
-
-;; cursor: red
-;;
-;; (setq evil-emacs-state-cursor   '("#cd0000" hollow))
-;; (setq evil-normal-state-cursor  '("#cd0000" box))
-;; (setq evil-insert-state-cursor  '("#cd0000" (hbar . 3)))
-;; (setq evil-replace-state-cursor '("#cd0000" box))
-
-;; theme: classic
-; (setq evil-emacs-state-cursor   '("#ffff00" hollow))
-; (setq evil-normal-state-cursor  '("#ffff00" box))
-; (setq evil-insert-state-cursor  '("#ffff00" (hbar . 3)))
-; (setq evil-replace-state-cursor '("#ffff00" box))
-
-;; theme: gnome2
-; (setq evil-emacs-state-cursor   '("#ffff00" hollow))
-; (setq evil-normal-state-cursor  '("#ffff00" box))
-; (setq evil-insert-state-cursor  '("#ffff00" (hbar . 3)))
-; (setq evil-replace-state-cursor '("#ffff00" box))
-;
-
-
-
-;; cursor
-(setq evil-emacs-state-cursor   '("#00008b" hollow))
+(setq evil-default-cursor  '("#cd0000" box))
 (setq evil-normal-state-cursor  '("#00008b" box))
 (setq evil-insert-state-cursor  '("#00008b" (hbar . 3)))
 (setq evil-replace-state-cursor '("#008b8b" box))
+(setq evil-motion-state-cursor '("#ffff00" box))
+(setq evil-emacs-state-cursor   '("#00008b" hollow))
 
-
-;; theme
+;; Theme
 (load-theme 'faff t)
 
-
-;; ===========================================================
 ;; Evil mode
 (require 'evil)
 (evil-mode 1)

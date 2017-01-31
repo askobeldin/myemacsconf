@@ -59,18 +59,6 @@
         ;; Let me type it.
         (setq helm-swoop-pre-input-function (lambda () ()))
         (after 'evil
-          (define-key evil-normal-state-map (kbd "SPC l")   'helm-swoop))))
-
-
-    ; (after 'evil-leader
-        ; (evil-leader/set-key "b" 'helm-mini)
-        ; (evil-leader/set-key "i" 'helm-imenu))
-
-
-    ; (after 'flycheck
-      ; (use-package helm-flycheck
-        ; :ensure helm-flycheck))
-        
-        )
+          (define-key evil-normal-state-map (kbd "SPC l")   'helm-swoop)))))
 
 (provide 'my-helm)

@@ -2,16 +2,14 @@
   :ensure company
   :init
   (progn
-    (global-company-mode)
-    )
+    (global-company-mode))
   :config
   (progn
     (defun my-company-pass-key (arg)
       "Pass a key out of company-mode"
       (interactive "P")
       (company-abort)
-      (kbd arg)
-      )
+      (kbd arg))
     ;; C-hjkl in company-mode
     (define-key company-active-map (kbd "C-h") 'company-show-doc-buffer)
     (define-key company-active-map (kbd "C-l") 'company-show-location)
@@ -34,8 +32,6 @@
     (define-key company-active-map (kbd "<f1>") 'company-show-doc-buffer)
     (define-key company-active-map "\C-w" 'company-show-location)
     (define-key company-active-map "\C-s" 'company-search-candidates)
-    (define-key company-active-map "\C-\M-s" 'company-filter-candidates)
-    )
-  )
+    (define-key company-active-map "\C-\M-s" 'company-filter-candidates)))
 
 (provide 'my-autocomplete)
