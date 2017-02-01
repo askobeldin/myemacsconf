@@ -20,7 +20,6 @@
   :ensure evil
   :config
   (progn
-
     (evil-mode 1)
     (setq evil-want-C-u-scroll t)
     (setq evil-want-C-w-in-emacs-state t)
@@ -58,15 +57,13 @@
 
     (define-key evil-normal-state-map (kbd "C-w }") 'evil-window-rotate-downwards)
     (define-key evil-normal-state-map (kbd "C-w {") 'evil-window-rotate-upwards)
-
     (define-key evil-normal-state-map (kbd "C-h")   'evil-window-left)
     (define-key evil-normal-state-map (kbd "C-j")   'evil-window-down)
     (define-key evil-normal-state-map (kbd "C-k")   'evil-window-up)
     (define-key evil-normal-state-map (kbd "C-l")   'evil-window-right)
-
     (define-key evil-normal-state-map (kbd "C-<tab>") 'evil-next-buffer)
-
     (define-key evil-normal-state-map "a"           'evil-append)
+    (define-key evil-normal-state-map "/"           'evil-search-forward)
 
     (define-key evil-motion-state-map "h"           'evil-backward-char)
     (define-key evil-motion-state-map "j"           'evil-next-visual-line)
@@ -75,7 +72,6 @@
     (define-key evil-motion-state-map "$"           'evil-end-of-line)
     (define-key evil-motion-state-map "0"           'evil-beginning-of-line)
 
-    (define-key evil-normal-state-map "/"           'evil-search-forward)
 
     (evil-ex-define-cmd "Q"  'evil-quit)
     (evil-ex-define-cmd "Qa" 'evil-quit-all)
