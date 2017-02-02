@@ -62,6 +62,7 @@
     (define-key evil-normal-state-map (kbd "C-k")   'evil-window-up)
     (define-key evil-normal-state-map (kbd "C-l")   'evil-window-right)
     (define-key evil-normal-state-map (kbd "C-<tab>") 'evil-next-buffer)
+    (define-key evil-normal-state-map (kbd "S-<tab>") 'evil-prev-buffer)
     (define-key evil-normal-state-map "a"           'evil-append)
     (define-key evil-normal-state-map "/"           'evil-search-forward)
 

@@ -35,6 +35,23 @@
 ; (add-to-list 'default-frame-alist
              ; '(fullscreen . maximized))
 
+(defun my-update-emacs-title ()
+  "Update the Emacs title based on the current buffer.
+
+If the current buffer is associated with a filename, that filename will be
+used to tile the window. Otherwise, the window will be titled based upon the
+name of the buffer."
+  (if (buffer-file-name (current-buffer))
+      (setq frame-title-format "Emacs - %f")
+      (setq frame-title-format "Emacs - %b")))
+
+(cl-dolist (hook '(buffer-list-update-hook
+                   change-major-mode-hook
+                   find-file-hook))
+  (add-hook hook 'my-update-emacs-title))
+
+
+
 ; Reconfigure highlight line's color
 ; (set-face-background 'hl-line "#dcdcdc")
 (set-face-foreground 'highlight nil)

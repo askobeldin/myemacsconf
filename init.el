@@ -82,6 +82,7 @@
 (require 'my-languages)
 (require 'my-evil)
 (require 'my-help)
+(require 'my-info)
 (require 'my-eshell)
 (require 'my-package-list)
 (require 'my-bookmarks)
