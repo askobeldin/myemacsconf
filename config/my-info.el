@@ -79,7 +79,7 @@
 		(kbd "k") 'evil-previous-line
 		(kbd "h") 'evil-backward-char
 		(kbd "l") 'evil-forward-char
-		(kbd "q") 'Info-exit
+		(kbd "Q") 'Info-exit
 
 		(kbd "TAB") 'Info-next-reference
 		(kbd "<backspace>") 'Info-prev-reference
@@ -103,6 +103,7 @@
 
 		(kbd "]") 'Info-forward-node
 		(kbd "[") 'Info-backward-node
+
 		(kbd "t") 'Info-top-node
 		(kbd "T") 'Info-toc
 		(kbd "u") 'Info-up

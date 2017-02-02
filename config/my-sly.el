@@ -19,7 +19,7 @@
       (setq common-lisp-hyperspec-root "file:///usr/share/doc/hyperspec/")))
 
 ; electric mode
-;; (add-hook 'sly-mrepl-mode-hook 'electric-pair-mode)
+(add-hook 'sly-mrepl-mode-hook 'electric-pair-mode)
 
 (setq sly-net-coding-system 'utf-8-unix)
 
@@ -32,6 +32,12 @@
 (define-key company-active-map (kbd "\C-p") 'company-select-previous)
 (define-key company-active-map (kbd "\C-d") 'company-show-doc-buffer)
 (define-key company-active-map (kbd "M-.") 'company-show-location)  
+
+
+;; Sly modes
+(after 'evil
+(evil-set-initial-state 'sly-db-mode 'insert)
+(evil-set-initial-state 'sly-mrepl-mode 'insert))
 
 
 (provide 'my-sly)
