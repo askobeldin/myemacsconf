@@ -20,15 +20,16 @@
                   evil-matchit
                   evil-surround
                   evil-visualstar
-                  evil-paredit
+                  ; evil-paredit
+                  evil-lispy
                   neotree
                   faff-theme
                   ace-jump-buffer
                   company
                   sly
                   sly-company
-                  rainbow-delimiters
-                  rainbow-blocks
+                  ; rainbow-delimiters
+                  ; rainbow-blocks
                   helm
                   helm-swoop
                   projectile
