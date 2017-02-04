@@ -116,7 +116,7 @@ name of the buffer."
 (setq evil-insert-state-cursor  '("#00008b" (hbar . 3)))
 (setq evil-replace-state-cursor '("#008b8b" box))
 (setq evil-motion-state-cursor '("#ffff00" box))
-(setq evil-emacs-state-cursor   '("#00008b" hollow))
+(setq evil-emacs-state-cursor   '("#cd0000" hollow))
 
 ;; Theme
 (load-theme 'faff t)
