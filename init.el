@@ -20,7 +20,6 @@
                   evil-matchit
                   evil-surround
                   evil-visualstar
-                  ; evil-paredit
                   evil-lispy
                   neotree
                   faff-theme
@@ -28,8 +27,6 @@
                   company
                   sly
                   sly-company
-                  ; rainbow-delimiters
-                  ; rainbow-blocks
                   helm
                   helm-swoop
                   projectile
@@ -87,9 +84,7 @@
 (require 'my-eshell)
 (require 'my-package-list)
 (require 'my-bookmarks)
-(require 'my-paredit)
 (require 'my-ielm)
-; (require 'my-slime)
 (require 'my-sly)
 (require 'my-helm)
 (require 'my-magit)
