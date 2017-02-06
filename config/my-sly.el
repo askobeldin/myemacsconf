@@ -5,6 +5,9 @@
 (require 'sly-autoloads)
 (require 'sly-company)
 
+(require 'evil-lispy)
+
+
 ;; Это включает алгоритмы выравнивания лиспового кода из SLIME,
 ;; в противоположность стандартным из Emacs
 ; (setq lisp-indent-function 'common-lisp-indent-function)
@@ -20,6 +23,7 @@
 
 ; electric mode
 ; (add-hook 'sly-mrepl-mode-hook 'electric-pair-mode)
+(add-hook 'sly-mrepl-mode-hook #'evil-lispy-mode)
 
 (setq sly-net-coding-system 'utf-8-unix)
 

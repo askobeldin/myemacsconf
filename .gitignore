@@ -6,6 +6,7 @@ url/
 eshell/
 .cache/
 server/
+semanticdb/
 
 
 *.swp
