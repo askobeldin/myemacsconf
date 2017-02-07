@@ -21,6 +21,7 @@
                   evil-surround
                   evil-visualstar
                   evil-lispy
+                  evil-org
                   neotree
                   faff-theme
                   ace-jump-buffer
