@@ -18,7 +18,7 @@
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
-; input method
+; Keyboard: input method
 ; toggle - C-\
 (setq default-input-method 'russian-computer)
 
@@ -49,8 +49,6 @@ name of the buffer."
                    change-major-mode-hook
                    find-file-hook))
   (add-hook hook 'my-update-emacs-title))
-
-
 
 ; Reconfigure highlight line's color
 ; (set-face-background 'hl-line "#dcdcdc")
@@ -120,6 +118,21 @@ name of the buffer."
 
 ;; Theme
 (load-theme 'faff t)
+
+;; Calendar
+(setq display-time-24hr-format t)
+(setq display-time-day-and-date t)
+; (display-time)
+(setq calendar-date-display-form 
+      (quote ((format "%04s-%02d-%02d" year 
+                      (string-to-int month) 
+                      (string-to-int day)))))
+(setq calendar-time-display-form 
+      (quote (24-hours ":" minutes 
+              (if time-zone " (") time-zone 
+              (if time-zone ")"))))
+(setq calendar-week-start-day 1)
+(setq european-calendar-style t)
 
 ;; Evil mode
 (require 'evil)
