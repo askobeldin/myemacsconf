@@ -31,7 +31,7 @@
                   helm
                   helm-swoop
                   projectile
-				  magit
+                  magit
                   ))
 
 

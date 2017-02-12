@@ -42,6 +42,22 @@
   `(eval-after-load ,feature
      '(progn ,@body)))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; CEDET
+; (require 'cedet) ;; использую "вшитую" версию CEDET. Мне хватает...
+; (add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode)
+; (add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode)
+; (add-to-list 'semantic-default-submodes 'global-semantic-idle-scheduler-mode)
+; (add-to-list 'semantic-default-submodes 'global-semantic-highlight-func-mode)
+; (add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode)
+; (add-to-list 'semantic-default-submodes 'global-semantic-show-parser-state-mode)
+; (semantic-mode   t)
+; (global-ede-mode t)
+; (require 'ede/generic)
+; (require 'semantic/ia)
+; (ede-enable-generic-projects)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 (provide 'my-core)
 
