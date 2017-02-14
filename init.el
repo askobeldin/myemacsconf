@@ -32,6 +32,13 @@
                   helm-swoop
                   projectile
                   magit
+                  ;; python
+                  auto-virtualenv
+                  evil-text-object-python
+                  yasnippet
+                  python-docstring
+                  helm-pydoc
+                  python-mode
                   ))
 
 
